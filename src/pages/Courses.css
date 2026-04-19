@@ -1,0 +1,37 @@
+.courses-page { padding-top: 70px; min-height: 100vh; overflow-x: hidden; }
+.courses-hero { padding: 40px 0 0; text-align: center; }
+.courses-title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.2rem); color: var(--text-primary); font-weight: 900; margin-bottom: 16px; line-height: 1.2; }
+.courses-accent { background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.courses-subtitle { color: var(--text-secondary); font-size: 1rem; margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
+.courses-search { display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; max-width: 500px; margin: 0 auto; transition: all 0.3s ease; }
+.courses-search:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,245,255,0.1); }
+.search-icon { font-size: 1rem; flex-shrink: 0; }
+.search-input { flex: 1; background: none; border: none; outline: none; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; }
+.search-input::placeholder { color: var(--text-secondary); opacity: 0.5; }
+.filters-section { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: rgba(0,0,0,0.2); }
+.filters-row { display: flex; gap: 32px; flex-wrap: wrap; margin-bottom: 12px; }
+.filter-group { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.filter-label { font-size: 0.78rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+.filter-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.filter-pill { background: transparent; border: 1px solid var(--border); color: var(--text-secondary); font-size: 0.78rem; padding: 5px 14px; border-radius: 20px; cursor: pointer; transition: all 0.2s ease; font-family: var(--font-body); }
+.filter-pill:hover, .filter-pill.active { background: rgba(0,245,255,0.1); border-color: var(--primary); color: var(--primary); }
+.results-count { font-size: 0.82rem; color: var(--text-secondary); font-family: var(--font-mono); }
+.courses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.course-card { padding: 28px; cursor: pointer; display: flex; flex-direction: column; gap: 12px; border-left: 3px solid var(--course-color) !important; }
+.course-header { display: flex; justify-content: space-between; align-items: center; }
+.course-icon { font-size: 2rem; }
+.difficulty-badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 20px; font-family: var(--font-mono); font-weight: 700; }
+.diff-beginner { background: rgba(0,200,100,0.1); color: #00c864; border: 1px solid rgba(0,200,100,0.3); }
+.diff-intermediate { background: rgba(255,165,0,0.1); color: #ffa500; border: 1px solid rgba(255,165,0,0.3); }
+.diff-advanced { background: rgba(255,80,80,0.1); color: #ff5050; border: 1px solid rgba(255,80,80,0.3); }
+.course-title { font-family: var(--font-display); font-size: 0.9rem; color: var(--text-primary); font-weight: 700; line-height: 1.3; }
+.course-desc { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; flex: 1; }
+.course-meta { display: flex; gap: 16px; }
+.course-meta-item { font-size: 0.78rem; color: var(--text-secondary); font-family: var(--font-mono); }
+.course-tag { font-size: 0.72rem; color: var(--course-color); background: rgba(0,245,255,0.07); border: 1px solid rgba(0,245,255,0.2); padding: 3px 10px; border-radius: 20px; width: fit-content; font-family: var(--font-mono); }
+.course-cta { background: none; border: 1px solid var(--course-color); color: var(--course-color); padding: 9px 16px; border-radius: 8px; cursor: pointer; font-family: var(--font-display); font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; transition: all 0.3s ease; margin-top: 4px; }
+.course-cta:hover { background: rgba(0,245,255,0.1); box-shadow: 0 0 16px rgba(0,245,255,0.2); }
+.no-results { text-align: center; padding: 80px 20px; color: var(--text-secondary); font-size: 1rem; display: flex; flex-direction: column; gap: 12px; align-items: center; }
+.no-results span { font-size: 3rem; }
+@media(max-width:992px){ .courses-grid{grid-template-columns:1fr 1fr;} }
+@media(max-width:600px){ .courses-grid{grid-template-columns:1fr;} .filters-row{flex-direction:column; gap:16px;} }

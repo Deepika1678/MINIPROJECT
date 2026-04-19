@@ -1,0 +1,30 @@
+.features-page { padding-top: 70px; min-height: 100vh; overflow-x: hidden; }
+.features-hero { padding: 40px 0 0; }
+.features-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: var(--text-primary);
+  text-align: center; line-height: 1.2;
+  margin-bottom: 16px; font-weight: 900;
+}
+.features-accent { background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.features-subtitle { text-align: center; color: var(--text-secondary); font-size: 1rem; max-width: 600px; margin: 0 auto; line-height: 1.8; }
+.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.feature-card { padding: 32px 24px; display: flex; flex-direction: column; gap: 14px; }
+.feature-icon-wrap { width: 56px; height: 56px; border-radius: 14px; background: rgba(0,245,255,0.1); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
+.feature-icon { font-size: 1.6rem; }
+.feature-title { font-family: var(--font-display); font-size: 0.9rem; color: var(--text-primary); font-weight: 700; }
+.feature-desc { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; flex: 1; }
+.feature-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.feature-tag { background: rgba(0,245,255,0.07); border: 1px solid var(--border); color: var(--primary); font-size: 0.72rem; padding: 3px 10px; border-radius: 20px; font-family: var(--font-mono); }
+.tech-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.tech-card { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 24px 16px; text-align: center; }
+.tech-icon { font-size: 2rem; }
+.tech-name { font-family: var(--font-display); font-size: 0.78rem; color: var(--text-primary); font-weight: 700; }
+.tech-desc { font-size: 0.72rem; color: var(--text-secondary); }
+.stats-banner-card { display: flex; justify-content: space-around; align-items: center; padding: 40px; flex-wrap: wrap; gap: 24px; }
+.banner-stat { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.banner-num { font-family: var(--font-display); font-size: 2.5rem; font-weight: 900; color: var(--primary); }
+.banner-label { font-size: 0.85rem; color: var(--text-secondary); text-align: center; }
+@media(max-width:992px){ .features-grid{grid-template-columns:1fr 1fr;} .tech-grid{grid-template-columns:repeat(3,1fr);} }
+@media(max-width:600px){ .features-grid{grid-template-columns:1fr;} .tech-grid{grid-template-columns:repeat(2,1fr);} }
