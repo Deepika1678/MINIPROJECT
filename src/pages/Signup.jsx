@@ -122,6 +122,7 @@ const Signup = () => {
                       <option>EEE</option>
                       <option>Mechanical</option>
                       <option>Civil</option>
+                      <option>other</option>
                     </select>
                   </div>
                 </div>
@@ -134,6 +135,7 @@ const Signup = () => {
                       <option>2nd Year</option>
                       <option>3rd Year</option>
                       <option>4th Year</option>
+                      <option>Other</option>
                     </select>
                   </div>
                 </div>

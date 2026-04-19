@@ -3,10 +3,10 @@ import './Reviews.css';
 
 const reviews = [
   {
-    name: 'Sujitha',
+    name: 'Sujitha Subhu',
     branch: 'CSE (AI&DS)',
     year: '3rd Year',
-    avatar: 'SJ',
+    avatar: 'SS',
     rating: 5,
     review: 'TechLearn literally saved my semester! The Machine Learning notes are so well organized and easy to understand. I went from confused to confident in just 2 weeks. Deepika has done an amazing job structuring everything — this is exactly what we AI&DS students needed!',
     subject: 'Machine Learning',
